@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import STORE from '../STORE';
+import BackButton from '../buttons/BackButton';
 
 export class SmoothieInfoPage extends Component {
     render() {
@@ -18,6 +19,11 @@ export class SmoothieInfoPage extends Component {
                         {smoothieInfo.sweetners ? <p>Sweetners: {smoothieInfo.sweetners}</p> : ''}
                         {smoothieInfo.other ? <p>Other: {smoothieInfo.other}</p> : ''}
                     </div>
+                    <BackButton
+                        btnClass='btn back-button'
+                        title='Back'                    
+                    />
+
                 </div>
         );
     };
