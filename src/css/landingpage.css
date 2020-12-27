@@ -1,0 +1,15 @@
+.landing-page__container {
+    text-align: center;
+}
+
+.landing-page__info, .landing-page__card {
+    padding: 15px;
+}
+
+@media only screen and (min-width:768px) {
+    .landing-page__card {
+        display: flex;
+        justify-content: center;
+        vertical-align: center;
+    }
+}

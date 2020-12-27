@@ -1,0 +1,27 @@
+.hero__container {
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 100px;
+}
+
+.hero-header__text {
+    font-family: 'Rubik', sans-serif;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.hero-title{
+  color: green;
+}
+
+.hero-description__container {
+  font-family: 'Work Sans', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hero-button__btn {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}

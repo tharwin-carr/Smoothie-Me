@@ -1,0 +1,9 @@
+@import 'navbar.css';
+@import 'hero.css';
+@import 'landingpage.css';
+@import 'card.css';
+@import 'footer.css';
+
+* {
+    box-sizing: border-box;
+}

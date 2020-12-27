@@ -1,0 +1,14 @@
+.footer__container {
+    text-align: center;
+    width: 100%;
+}
+
+.footer-label__words {
+    font-family: 'Work Sans', sans-serif;
+    padding-top: 15px;
+}
+
+a {
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
