@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import BackButton from '../buttons/BackButton';
 import STORE from '../STORE';
 
 export default class FavoritesPage extends Component {
@@ -28,6 +29,10 @@ export default class FavoritesPage extends Component {
                     </Link>
                     
                 </div>
+                <BackButton 
+                    btnClass='btn back-button'
+                    title='Back'
+                />
             </div>
             );
         });

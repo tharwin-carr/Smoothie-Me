@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage';
 import SmoothiesPage from './components/SmoothiesPage';
 import SmoothieInfoPage from './components/SmoothieInfoPage';
 import FavoritesPage from './components/FavoritesPage';
+import AddSmoothiePage from './components/AddSmoothiePage';
 import STORE from './STORE';
 
 export default class App extends Component {
@@ -25,6 +26,7 @@ export default class App extends Component {
                 <Route path='/smoothies' component={SmoothiesPage} />
                 <Route path='/STORE.smoothies/:smoothieId' render={(props) => <SmoothieInfoPage {...props} />} />
                 <Route path='/favorites' component={FavoritesPage} />
+                <Route path='/add-smoothie' component={AddSmoothiePage} />
               </Switch>      
             </main>
           </div>

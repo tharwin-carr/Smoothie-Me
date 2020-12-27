@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import SmoothiesList from './SmoothiesList';
+import AddSmoothieButton from '../buttons/AddSmoothieButton'
 
 export class SmoothiesPage extends Component {
     render() {
@@ -13,11 +13,10 @@ export class SmoothiesPage extends Component {
                 </div>
 
                 <div className='smoothiespage-btn__container'>
-                    <Link to='/add-smoothie'>
-                        <button className='btn smoothiespage__btn'>
-                            Add Smoothie
-                        </button>
-                    </Link>
+                    <AddSmoothieButton
+                        btnClass= 'btn add-smoothie__btn'
+                        title='Add Smoothie'
+                    />                     
                 </div>
                 
                 <SmoothiesList />                
