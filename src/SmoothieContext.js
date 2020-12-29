@@ -6,7 +6,8 @@ const SmoothieContext = React.createContext({
     addSmoothie: () => {},
     deleteSmoothie: () => {},
     updateSmoothie: () => {},
-    favoriteSmoothie: () => {}
+    favoriteSmoothie: () => {},
+    deleteFavorite: () => {},
 });
 
 export default SmoothieContext;

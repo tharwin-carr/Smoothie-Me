@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import STORE from '../STORE';
+import SmoothieContext from '../SmoothieContext';
 
-export class SmoothiesList extends Component {
+export default class SmoothiesList extends Component {
+    static contextType = SmoothieContext;
     render() {
-        const list = STORE.smoothies.map((smoothie) => {
+        const list = this.context.smoothies.map(smoothie => {
             return (
                 <div className='smoothie' key={smoothie.id}>
                     <h2>
-                        <Link to={`/STORE.smoothies/${smoothie.id}`}>
+                        <Link to={`/smoothies/${smoothie.id}`}>
                             {smoothie.title}
                         </Link>
                     </h2>
 
                     <div>
-                        <Link to={`/STORE.smoothies/${smoothie.id}`}>
+                        <Link to={`/smoothies/${smoothie.id}`}>
                             <img
                                 alt='blender'
                                 src='https://img.icons8.com/ios-filled/50/000000/blender.png'
@@ -23,7 +24,7 @@ export class SmoothiesList extends Component {
                     </div>
 
                     <div>
-                        <Link to={`/STORE.smoothies/${smoothie.id}`}>
+                        <Link to={`/smoothies/${smoothie.id}`}>
                             <button>View Smoothie</button>
                         </Link>
                         
@@ -34,6 +35,3 @@ export class SmoothiesList extends Component {
         return <div>{list}</div>;
     };
 };
-
-export default SmoothiesList;
-
