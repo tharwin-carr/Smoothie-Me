@@ -5,6 +5,7 @@ import BackButton from '../buttons/BackButton';
 
 export class SmoothieInfoPage extends Component {
     static contextType = SmoothieContext;
+    
     static defaultProps = {
         onDeleteSmoothie: () => {},
         match: {
@@ -34,6 +35,30 @@ export class SmoothieInfoPage extends Component {
         });
     };
 
+    handleClickFavorite(event, smoothieId) {
+        event.preventDefault();
+        const favorite = {
+            favorite_id: smoothieId
+        }
+        console.log(favorite)
+        fetch(`${config.API_ENDPOINT}/favorites`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(favorite)
+        })
+        .then(res => res.json())
+        .then(favorite => {
+            this.context.favoriteSmoothie(favorite)
+            this.props.history.push('/favorites')
+            window.location.reload()
+        })
+        .catch(error => {
+            console.log(error)
+        });
+    };
+
     render() {
         const smoothieId = Number(this.props.match.params.smoothieId);
         const smoothieInfo = this.context.smoothies.length > 0 ? this.context.smoothies.find(smoothie => {
@@ -57,6 +82,9 @@ export class SmoothieInfoPage extends Component {
                     />
                     <button onClick={e => this.handleClickDelete(e, smoothieId)}>
                         Delete
+                    </button>
+                    <button onClick={event => this.handleClickFavorite(event, smoothieId)}>
+                        Add to Favorites
                     </button>
 
                 </div>

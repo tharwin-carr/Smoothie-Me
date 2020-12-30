@@ -68,7 +68,7 @@ export default class App extends Component {
       addSmoothie: this.addSmoothie,
       favoriteSmoothie: this.favoriteSmoothie,
       deleteSmoothie: this.deleteSmoothie,
-      deleteFavortie: this.deleteFavorite
+      deleteFavorite: this.deleteFavorite
     }
     return (
       <SmoothieContext.Provider value = {smoothieContextValue}>
