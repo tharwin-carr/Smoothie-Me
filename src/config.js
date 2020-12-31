@@ -1,3 +1,3 @@
 export default {
-    API_ENDPOINT: `https://powerful-beach-68599.herokuapp.com/api`
+    API_ENDPOINT: `https://postgresql-animated-73643.herokuapp.com/api`
 };
