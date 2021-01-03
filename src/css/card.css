@@ -1,15 +1,24 @@
 .card__container {
     margin: 10px 30px;
     line-height: 1.3;
-    border-bottom: 1px solid black
+    border-bottom: 1px solid;
 }
 
 .card-description__container {
     margin-top: -40px;
 }
 
+.card__description {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.card-img {
+    color: #99738E;
+}
+
 .card__title {
-    color: green;
+    font-family: 'Proza Libre', sans-serif;
+    color: #99738E;
     font-size: 22px;
 }
 
@@ -22,6 +31,6 @@
     }
 
     .card__container:not(:last-child) {
-        border-right: 1px solid black;
+        border-right: 1px solid;
     }
-}
+};

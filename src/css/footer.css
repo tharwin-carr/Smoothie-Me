@@ -4,11 +4,12 @@
 }
 
 .footer-label__words {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    color: #99738E;
     padding-top: 15px;
 }
 
 a {
     padding-right: 15px;
     padding-bottom: 15px;
-}
+};

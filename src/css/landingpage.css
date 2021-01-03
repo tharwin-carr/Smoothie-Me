@@ -6,10 +6,16 @@
     padding: 15px;
 }
 
+.landing-page__title {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 24px;
+    color: #99738E;
+}
+
 @media only screen and (min-width:768px) {
     .landing-page__card {
         display: flex;
         justify-content: center;
         vertical-align: center;
     }
-}
+};

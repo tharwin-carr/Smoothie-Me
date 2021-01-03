@@ -3,7 +3,16 @@
 @import 'landingpage.css';
 @import 'card.css';
 @import 'footer.css';
+@import 'buttons.css';
+@import 'smoothieslist.css';
+@import 'smoothiespage.css';
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Proza+Libre&display=swap');
 
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-color: #242582;
+    color: white;
+};

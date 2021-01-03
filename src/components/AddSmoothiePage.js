@@ -189,7 +189,7 @@ export default class AddSmoothiePage extends Component {
                         placeholder= 'Other...'
                     />
                     <br />
-                    <button type='submit'>
+                    <button className='btn' type='submit'>
                         Publish
                     </button>
                 </form>                

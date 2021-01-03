@@ -7,7 +7,7 @@ export class SmoothiesPage extends Component {
         return (
             <div>
                 <div className='smoothiespage__container'>
-                    <h1>
+                    <h1 className='smoothiespage__title'>
                         Add or Browse Smoothies
                     </h1>
                 </div>
@@ -18,8 +18,11 @@ export class SmoothiesPage extends Component {
                         title='Add Smoothie'
                     />                     
                 </div>
-                
-                <SmoothiesList />                
+
+                <div className='smoothiespage__list'>
+                    <SmoothiesList /> 
+                </div>        
+               
             </div>
         );
     };

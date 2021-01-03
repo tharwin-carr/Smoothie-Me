@@ -9,7 +9,7 @@ export default class SmoothiesList extends Component {
             return (
                 <div className='smoothie' key={smoothie.id}>
                     <h2>
-                        <Link to={`/smoothies/${smoothie.id}`}>
+                        <Link className='smoothie__title' to={`/smoothies/${smoothie.id}`}>
                             {smoothie.title}
                         </Link>
                     </h2>
@@ -18,20 +18,20 @@ export default class SmoothiesList extends Component {
                         <Link to={`/smoothies/${smoothie.id}`}>
                             <img
                                 alt='blender'
-                                src='https://img.icons8.com/ios-filled/50/000000/blender.png'
+                                src='https://img.icons8.com/ios-filled/60/ffffff/blender.png'
                             />
                         </Link>
                     </div>
 
                     <div>
                         <Link to={`/smoothies/${smoothie.id}`}>
-                            <button>View Smoothie</button>
+                            <button className='btn'>View Smoothie</button>
                         </Link>
                         
                     </div>
                 </div>
             );
         });
-        return <div>{list}</div>;
+        return <div className='list'>{list}</div>;
     };
 };

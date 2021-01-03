@@ -7,3 +7,27 @@
     align-items: center;
     width: 100%;
 }
+
+
+
+.nav-bar__title, .nav-bar__btn {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    cursor: pointer;
+    color: #F64C72;    
+}
+
+.nav-bar__btn {
+    border: .5px solid #F64C72;
+    background-color: #242582;
+    font-size: 16px;
+    padding: 5px 10px;
+
+}
+
+.nav-bar__title {
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #242582;
+};

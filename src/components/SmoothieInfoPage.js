@@ -80,10 +80,10 @@ export class SmoothieInfoPage extends Component {
                         btnClass='btn back-button'
                         title='Back'                    
                     />
-                    <button onClick={e => this.handleClickDelete(e, smoothieId)}>
+                    <button className='btn' onClick={e => this.handleClickDelete(e, smoothieId)}>
                         Delete
                     </button>
-                    <button onClick={event => this.handleClickFavorite(event, smoothieId)}>
+                    <button className='btn' onClick={event => this.handleClickFavorite(event, smoothieId)}>
                         Add to Favorites
                     </button>
 
