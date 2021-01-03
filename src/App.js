@@ -77,7 +77,7 @@ export default class App extends Component {
               <nav>
                 <NavBar />
               </nav>
-              <main className='App'>
+              <main className='app'>
                 <Switch>
                   <Route exact path='/' component={() => <LandingPage />} />
                   <Route path='/smoothies/:smoothieId' component={SmoothieInfoPage} />
