@@ -1,9 +1,9 @@
 .favorites__container {
     text-align: center;
+    margin-left: 10px;
 }
 
 .favorites {
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -16,6 +16,10 @@
 
 .view-button, .remove-button {
     margin-top: 15px;
+}
+
+.remove-button {
+    margin-right: 10px;
 }
 
 @media only screen and (min-width: 768px) {

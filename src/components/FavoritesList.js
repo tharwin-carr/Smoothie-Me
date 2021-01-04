@@ -45,7 +45,7 @@ export default class FavoritesList extends Component {
                         <Link to={`/smoothies/${favorite.favorite_id}`}>
                             <img
                                 alt='blender'
-                                src='https://img.icons8.com/ios-filled/50/000000/blender.png'
+                                src='https://img.icons8.com/ios-filled/50/ffffff/blender.png'
                             />
                         </Link>
                     </div>
@@ -56,7 +56,7 @@ export default class FavoritesList extends Component {
                         </Link>
                         <br />
                         <button className='btn remove-button' onClick={(e) => this.handleDeleteFavorite(e, favorite.favorite_id)}>
-                            Remove From Favorites
+                            Remove
                         </button>
                         
                     </div>
