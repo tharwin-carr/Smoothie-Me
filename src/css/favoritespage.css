@@ -10,3 +10,7 @@
 .favorites-btn__container {
     text-align: center;
 }
+
+.back-button {
+    cursor: pointer;
+}

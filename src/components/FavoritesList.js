@@ -51,8 +51,8 @@ export default class FavoritesList extends Component {
                     </div>
 
                     <div>
-                        <Link className='view-button' to={`/smoothies/${favorite.favorite_id}`}>
-                            <button className='btn'>View Smoothie</button>
+                        <Link to={`/smoothies/${favorite.favorite_id}`}>
+                            <button className='btn view-button'>View Smoothie</button>
                         </Link>
                         <br />
                         <button className='btn remove-button' onClick={(e) => this.handleDeleteFavorite(e, favorite.favorite_id)}>

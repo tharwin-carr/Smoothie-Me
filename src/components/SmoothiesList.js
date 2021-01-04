@@ -27,7 +27,7 @@ export default class SmoothiesList extends Component {
 
                     <div>
                         <Link to={`/smoothies/${smoothie.id}`}>
-                            <button className='btn'>View Smoothie</button>
+                            <button className='btn view-button'>View Smoothie</button>
                         </Link>
                         
                     </div>
