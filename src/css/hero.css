@@ -29,3 +29,9 @@
     text-align: center;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 768px) {
+    .hero-header__text, .hero-title, .hero-button__btn, p { 
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,18 @@
+.favorites__container {
+    text-align: center;
+}
+
+.favorites {
+    margin: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.favorites__title {
+    color: #F64C72;
+}
+
+.view-button, .remove-button {
+    margin-top: 15px;
+}

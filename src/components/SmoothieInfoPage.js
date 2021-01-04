@@ -65,7 +65,7 @@ export class SmoothieInfoPage extends Component {
             return smoothie.id === smoothieId;
         }) : '';
         return (
-                <div>
+                <div className='smoothieinfo__container'>
                     {smoothieInfo.title ? <h1>{smoothieInfo.title}</h1> : ''}
                     <div>
                         {smoothieInfo.fruit ? <p>Fruit: {smoothieInfo.fruit}</p> : ''}
@@ -76,16 +76,19 @@ export class SmoothieInfoPage extends Component {
                         {smoothieInfo.sweetners ? <p>Sweetners: {smoothieInfo.sweetners}</p> : ''}
                         {smoothieInfo.other ? <p>Other: {smoothieInfo.other}</p> : ''}
                     </div>
+
+                    <button className='btn favorite-button' onClick={event => this.handleClickFavorite(event, smoothieId)}>
+                        Add to Favorites
+                    </button>
+                    <br />
+                    <button className='btn delete-button' onClick={e => this.handleClickDelete(e, smoothieId)}>
+                        Delete
+                    </button>
+                    <br />
                     <BackButton
                         btnClass='btn back-button'
                         title='Back'                    
                     />
-                    <button className='btn' onClick={e => this.handleClickDelete(e, smoothieId)}>
-                        Delete
-                    </button>
-                    <button className='btn' onClick={event => this.handleClickFavorite(event, smoothieId)}>
-                        Add to Favorites
-                    </button>
 
                 </div>
         );

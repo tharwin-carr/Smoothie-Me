@@ -111,9 +111,9 @@ export default class AddSmoothiePage extends Component {
 
     render() {
         return (
-            <div>
+            <div className='add-smoothie-page'>
                 <form id='addSmoothieForm' onSubmit={event => this.handleSubmit(event)}>
-                    <h3>
+                    <h3 className='add-smoothie-title'>
                         Add New Smoothie:
                     </h3>
                     <input
@@ -189,7 +189,7 @@ export default class AddSmoothiePage extends Component {
                         placeholder= 'Other...'
                     />
                     <br />
-                    <button className='btn' type='submit'>
+                    <button className='btn publish' type='submit'>
                         Publish
                     </button>
                 </form>                

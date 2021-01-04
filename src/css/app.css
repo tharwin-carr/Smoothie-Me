@@ -6,6 +6,9 @@
 @import 'buttons.css';
 @import 'smoothieslist.css';
 @import 'smoothiespage.css';
+@import 'smoothieinfopage.css';
+@import 'favoritespage.css';
+@import'addsmoothiepage.css';
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Proza+Libre&display=swap');
 
 * {
@@ -18,7 +21,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .app {
+    .app-container { 
         font-size: 1.2em;
         line-height: 1.8;
     }

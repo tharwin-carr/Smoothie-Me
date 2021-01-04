@@ -1,9 +1,8 @@
 .smoothie {
-    margin-top: 20px;
+    margin: 40px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 1px solid;
 }
 
 .smoothie__title {

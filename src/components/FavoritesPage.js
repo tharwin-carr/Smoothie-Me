@@ -36,11 +36,8 @@ export default class FavoritesPage extends Component {
         const list = this.context.favorites.map(favorite => {
             return (
                 <div className='favorites' key={favorite.favorite_id}>
-                    <h1>
-                        Favorites:
-                    </h1>
                     <h2>
-                        <Link to={`/smoothies/${favorite.favorite_id}`}>
+                        <Link className='favorites__title' to={`/smoothies/${favorite.favorite_id}`}>
                             {favorite.favorite_title}
                         </Link>
                     </h2>
@@ -55,11 +52,11 @@ export default class FavoritesPage extends Component {
                     </div>
 
                     <div>
-                        <Link to={`/smoothies/${favorite.favorite_id}`}>
+                        <Link className='view-button' to={`/smoothies/${favorite.favorite_id}`}>
                             <button className='btn'>View Smoothie</button>
                         </Link>
                         <br />
-                        <button className='btn' onClick={(e) => this.handleDeleteFavorite(e, favorite.favorite_id)}>
+                        <button className='btn remove-button' onClick={(e) => this.handleDeleteFavorite(e, favorite.favorite_id)}>
                             Remove From Favorites
                         </button>
                         
@@ -69,7 +66,10 @@ export default class FavoritesPage extends Component {
             );
         });
         return (
-        <div>
+        <div className='favorites__container'>
+            <h1>
+                Favorites:
+            </h1>
             {list}
             <BackButton 
                 btnClass='btn back-button'
