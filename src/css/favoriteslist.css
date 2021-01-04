@@ -9,7 +9,9 @@
 }
 
 .favorites__title {
+    font-family: 'Proza Libre', sans-serif;
     color: #F64C72;
+    text-decoration: none;
 }
 
 .view-button, .remove-button {
