@@ -1,0 +1,28 @@
+.favorites__container {
+    text-align: center;
+}
+
+.favorites {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.favorites__title {
+    color: #F64C72;
+}
+
+.view-button, .remove-button {
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .favorites {
+        width: 25%;
+    }
+    .favorites__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}

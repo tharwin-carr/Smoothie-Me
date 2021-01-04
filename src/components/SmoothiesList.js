@@ -4,6 +4,8 @@ import SmoothieContext from '../SmoothieContext';
 
 export default class SmoothiesList extends Component {
     static contextType = SmoothieContext;
+
+    //maps through the smoothies array and displays the smoothies in list form for the user
     render() {
         const list = this.context.smoothies.map(smoothie => {
             return (

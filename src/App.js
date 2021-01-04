@@ -16,6 +16,7 @@ export default class App extends Component {
     favorites: []
   }
 
+  //sets the state with smoothies and corresponding favorites once the page is loaded
   componentDidMount() {
     Promise.all([
       fetch(`${config.API_ENDPOINT}/smoothies`),
@@ -37,24 +38,28 @@ export default class App extends Component {
       });
   };
 
+  //adds a smoothie to the state
   addSmoothie = smoothie => {
     this.setState({
       smoothies: [...this.state.smoothies, smoothie]
     });
   };
 
+  //deletes the smoothie from the state
   deleteFavorite = favorite_id => {
     this.setState({
       favorites: this.state.favorites.filter(favorite => favorite.id !== favorite_id)
     });
   };
 
+  //adds a smoothie to the favorites array in state
   favoriteSmoothie = favoriteSmoothie => {
     this.setState({
       favorites: [...this.state.favorites, favoriteSmoothie]
     });
   };
 
+  //takes a smoothie out of the smoothie array in state
   deleteSmoothie = smoothie_id => {
     this.setState({
       smoothies: this.state.smoothies.filter(smoothie => smoothie.id !== smoothie_id)

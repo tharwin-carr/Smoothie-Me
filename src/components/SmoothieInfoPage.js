@@ -3,7 +3,7 @@ import SmoothieContext from '../SmoothieContext';
 import config from '../config';
 import BackButton from '../buttons/BackButton';
 
-export class SmoothieInfoPage extends Component {
+export default class SmoothieInfoPage extends Component {
     static contextType = SmoothieContext;
     
     static defaultProps = {
@@ -16,6 +16,7 @@ export class SmoothieInfoPage extends Component {
         },
     };
 
+    //removes the smoothies from the database
     handleClickDelete = (e, smoothieId) => {
         e.preventDefault();
 
@@ -35,6 +36,7 @@ export class SmoothieInfoPage extends Component {
         });
     };
 
+    // adds the selected smoothie to the favorites list for the user
     handleClickFavorite(event, smoothieId) {
         event.preventDefault();
         const favorite = {
@@ -94,5 +96,3 @@ export class SmoothieInfoPage extends Component {
         );
     };
 };
-
-export default SmoothieInfoPage;

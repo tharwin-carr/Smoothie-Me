@@ -42,6 +42,7 @@ export default class AddSmoothiePage extends Component {
         };
     };
 
+    // updates the state with the typed content for each input
     updateTitle(title) {
         this.setState({title: {value: title, touched: true}})
     }
@@ -75,6 +76,7 @@ export default class AddSmoothiePage extends Component {
         };
     };
 
+    //adds the users smoothie to the database when submittted
     handleSubmit(event) {
         event.preventDefault();
         const newSmoothie = {
